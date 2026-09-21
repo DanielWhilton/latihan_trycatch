@@ -34,7 +34,6 @@ void main() async {
 
   //POIN
   //Buatkan ke dalam for in
-  // Sesudah: for-in
 // for (var comment in data) {
 //   print('${comment['name']} | ${comment['email']}');
 //   print('----------------------------------------');
