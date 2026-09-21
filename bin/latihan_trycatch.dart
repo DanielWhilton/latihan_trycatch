@@ -69,7 +69,7 @@ void main() async {
   print('Data Products');
   print('----------------------------------------');
   for (var product in data) {
-    print('${product['title']} | \$${product['price']}');
+    print('Product Name: ${product['title']} | Price: \$${product['price']} | Stock: ${product['stock']}');
     print('----------------------------------------');
   }
 }
