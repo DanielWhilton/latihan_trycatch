@@ -14,11 +14,16 @@ void main() async {
 
   //POIN buat future dengan pengembalian dari contoh di atas
   Future<dynamic> tarikData2() async {
-    var response = await http.get(
+    try {
+      var response = await http.get(
       Uri.parse('https://jsonplaceholder.typicode.com/comments'),
     );
     var data = jsonDecode(response.body);
     return data;
+    } catch(e) {
+      return [];
+    }
+    
   }
 
   // Panggil fungsi tarikData2 dan tangkap hasilnya
